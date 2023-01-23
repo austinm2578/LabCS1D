@@ -8,13 +8,15 @@ int hello1Function(string Austin);
 int hello2Function(string Kyle);
 int main()
 {
-string name1="your name1";
-hello1Function(name1);
-string name2="your name2";
-hello2Function(name2);
-return 0;
+  string name1="your name1";
+  hello1Function(name1);
+  
+  string name2="Kyle Burris";
+  hello2Function(name2);
+  
+  return 0;
 }
-hello1Function
+// hello1Function
 /*
 * hello1Function.cpp
 *
