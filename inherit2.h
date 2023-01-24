@@ -29,7 +29,7 @@ class personType
    void setName(string first, string last);
  
    /**
-    *  A method to get the person's name.
+    *  Method to get the person's name.
     *  @param first The person's first name.
     *  @param last The person's last name.
     *  @return first = firstName, last = lastName
@@ -47,7 +47,7 @@ class personType
    personType(string first, string last);
 
    /**
-    *  Default constructor.
+    *  Default Constructor.
     *  firstName and lastName are set to an empty string.
     *  POST: firstname = "", lastName = "".
     */
