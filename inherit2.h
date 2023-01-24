@@ -23,15 +23,15 @@ class personType
    /** 
     *  Method to set the person's name.
     *  Post: firstName = first, lastName = last.
-    *  @param [in] first The person's first name.
-    *  @param [in] last The person's last name.
+    *  @param first The person's first name.
+    *  @param last The person's last name.
     */
    void setName(string first, string last);
  
    /**
     *  A method to get the person's name.
-    *  @param [out] first The person's first name.
-    *  @param [out] last The person's last name.
+    *  @param first The person's first name.
+    *  @param last The person's last name.
     *  @return first = firstName, last = lastName
     */
    void getName(string& first, string& last);
@@ -41,8 +41,8 @@ class personType
     * Overloaded Contructor.
     * sets the person's first and last name.
     * POST: firstName = first, lastName = last.
-    * @param [in] first The persons first name.
-    * @param [in] last The persons last name.
+    * @param first The persons first name.
+    * @param last The persons last name.
     */ 
    personType(string first, string last);
 
