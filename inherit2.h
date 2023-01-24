@@ -1,39 +1,62 @@
-//******************************************************************
-****
-//inherit2.h header file for the PersonType class
+/**********************************************************************
+*********** inherit2.h header file for the PersonType class ***********/
+
 #ifndef H_PersonType
 #define H_PersonType
+
 #include <string>
-
 using namespace std;
-
-
-/class  // This is a class that contains the name of a person.
  
+/**
+ *  Class for a type of person.
+ */
  
 class personType
 {
-public:
- void print() const;
- //Function to output the first name and last name
- //in the form firstName lastName
- void setName(string first, string last);
- //Function to set firstName and lastName according to
- //the parameters
- //Post: firstName = first; lastName = last;
- void getName(string& first, string& last);
- //Function to return firstName and lastName via the parameters
- //Post: first = firstName; last = lastName;
- personType(string first, string last);
- //Constructor with parameters
- //Set firstName and lastName according to the parameters
- //Post: firstName = first; lastName = last;
- personType();
- //Default constructor;
- //Intialize firstName and lastName to empty string
- //Post: firstName = ""; lastName = "";
-private:
- string firstName; /**< store the first name */
- string lastName;  /**< store the last name */
+  public:
+   /** 
+    *  Method to output the first and last name.
+    *  In the form firstName lastName.
+    */
+   void print() const;
+   
+   /** 
+    *  Method to set the person's name.
+    *  Post: firstName = first, lastName = last.
+    *  @param [in] first The person's first name.
+    *  @param [in] last The person's last name.
+    */
+   void setName(string first, string last);
+ 
+   /**
+    *  A method to get the person's name.
+    *  @param [out] first The person's first name.
+    *  @param [out] last The person's last name.
+    *  @return first = firstName, last = lastName
+    */
+   void getName(string& first, string& last);
+ 
+ 
+   /**
+    * Overloaded Contructor.
+    * sets the person's first and last name.
+    * POST: firstName = first, lastName = last.
+    * @param [in] first The persons first name.
+    * @param [in] last The persons last name.
+    */ 
+   personType(string first, string last);
+
+   /**
+    *  Default constructor.
+    *  firstName and lastName are set to an empty string.
+    *  POST: firstname = "", lastName = "".
+    */
+   personType();
+ 
+  private:
+   string firstName; /**< stores the first name */
+   string lastName;  /**< stores the last name  */
 };
+
+
 #endif
