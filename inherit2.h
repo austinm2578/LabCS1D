@@ -7,6 +7,10 @@
 
 using namespace std;
 
+
+/class  // This is a class that contains the name of a person.
+ 
+ 
 class personType
 {
 public:
@@ -29,7 +33,7 @@ public:
  //Intialize firstName and lastName to empty string
  //Post: firstName = ""; lastName = "";
 private:
- string firstName; //store the first name
- string lastName; //store the last name
+ string firstName; /**< store the first name */
+ string lastName;  /**< store the last name */
 };
 #endif
