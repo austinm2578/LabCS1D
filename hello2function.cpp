@@ -5,8 +5,8 @@
 #include <iostream>
 using namespace std;
 
-int hello2Function(string name2)
+int hello2Function(string name)
 {
-  cout << "hello World " << name2 << endl;
+  cout << "hello World " << name << endl;
   return 0;
 }
